@@ -1,0 +1,370 @@
+
+body {
+    background-color: #F2F2F2;
+    
+}
+
+
+
+
+/* Montserrat CSS */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color:white;
+    font-size:50px;
+    text-align:center;
+    
+}
+
+
+
+/* Home CSS */
+#home {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/coffee.jpg');
+    background-size: cover;                                        /* Arka plan resminin sayfanın boyutuna uygun bir şekilde ölçeklendirilmesini sağlar. */
+    background-repeat: no-repeat;                                  /* Resmin tekrar etmesini önler */
+    background-position: center;                                   /* Resmin ortalanmasını sağlar */
+    background-attachment: fixed;                                  /* Sayfa kaldırıldığında arka plan resminin sabit kalmasını sağlar */
+}
+      
+@media (min-width: 1024px) {
+    #home {
+        background-attachment: fixed;
+    }
+}
+      
+#home .home-logo {
+    margin: 20px;
+}
+      
+#home .home-logo img {
+    max-width: 100%;
+}
+      
+#home .home-container {
+    background: rgba(0, 0, 0, 0.8);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+      
+      
+      
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+      
+    #home h2 {
+    color: #999;
+    margin-bottom: 50px;
+    }
+      
+@media (max-width: 768px) {
+    #home h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    }
+    #home h2 .rotating {
+        display: block;
+    }
+}
+      
+#home .rotating > .animated {
+    display: inline-block;
+}
+      
+#home .actions a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+}
+      
+#home .btn-get-started {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+    color: #fff;
+}
+      
+#home .btn-get-started:hover {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+      
+#home .btn-services {
+    border: 2px solid #fff;
+    color: #fff;
+}
+      
+#home .btn-services:hover {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+}
+
+
+
+/* About CSS */
+
+
+.about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+  
+.about-mf .about-img {
+    margin-bottom: 2rem;
+}
+  
+.about-mf .about-img img {
+     margin-left: 10px;
+}
+
+  
+.skill-mf span {
+    color: #4e4e4e;
+}
+  
+.skill-mf .progress {
+    background-color: #cde1f8;
+    margin: .5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: .7rem;
+}
+  
+.skill-mf .progress .progress-bar {
+    height: .7rem;
+    background-color: #E21818;
+}
+
+
+/* Title Left */
+.title-box-2 {
+    margin-bottom: 3rem;
+}
+
+.title-a {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.title-left {
+    font-size: 2rem;
+    position: relative;
+}
+
+.title-left:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #E21818;
+    width: 100px;
+    bottom: -12px;
+}
+
+.box-shadow,
+.paralax-mf,
+.service-box,
+.work-box,
+.card-blog {
+     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Services CSS */
+.service-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+  
+.service-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #E21818;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+  
+.service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+  
+.service-box .ico-circle {
+    transition: all 500ms ease;
+    font-size: 4rem;
+}
+  
+.service-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem 0;
+}
+  
+.service-box .s-description {
+    color: #4e4e4e;
+}
+
+/* Socials */
+.socials {
+    padding: 1.5rem 0;
+}
+  
+.socials ul li {
+    display: inline-block;
+}
+  
+.socials .ico-circle {
+    height: 40px;
+    width: 40px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    line-height: 1.4;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #E21818;
+    transition: all 500ms ease;
+}
+  
+.socials .ico-circle:hover {
+    background-color: #E21818;
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+    transition: all 500ms ease;
+}
+
+/* Ico Circle */
+.ico-circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #E21818;
+    display: block;
+}
+
+/* Navbar Shadow Attribute */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px; /* navbar etiketinin yüksekliği */
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.navbar-nav .active {
+    border-bottom: 2px solid #E21818; /* alt çizgi rengi */
+    color: white;
+}
+
+
+/* navbar hover */
+.navbar-nav .nav-link:hover {
+    color: black;
+  }
+  
+
+.navbar-nav li a {
+    color:#E21818; /* menü öğesi metin rengi */
+    
+}
+
+.navbar-brand,
+.nav-link {
+    color:#E21818;
+}
+
+
+
+
+/* TITLE */
+.h4-logo {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-weight: bold;
+    color: #cf0a0a;
+    
+}
+
+/* yazi */
+#yazi {
+    padding-bottom: 25px;
+}
+
+/* About */
+#about {
+    padding-top: 70px;
+}
+
+
+/* Footer */
+.footer {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    padding: 40px 0;
+    background-color: #fff;
+    
+}
+  .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4c;
+}
+  .footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+  .footer .social a:hover {
+    opacity: 0.9;
+
+}
+  .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+#contact {
+    margin-top: 100px;
+
+}
+
+
+#workspace {
+    margin-top: 100px;
+    height: auto;
+}
+
+
