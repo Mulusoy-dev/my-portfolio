@@ -467,13 +467,14 @@
       var textarea = form.getElementsByTagName('textarea')[0];
       textarea.value = '';
 
-      form.submit();
+      location.reload();
 
     }
 
 
     var submitButton = document.querySelector('#form-container button[type="submit"]');
     submitButton.addEventListener('click', function (event) {
+      
       clearform();
     });
 
