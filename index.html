@@ -336,9 +336,9 @@
  
 
 
-
+  <!-- Contact  -->
   <section id="contact">
-    <div class="container mt-5">
+    <div class="container mt-5" id="form-container">
       <h2 class="contact-header" style="height: 50px">Contact Me</h1>
       <form class="row g-3" action="https://formsubmit.co/fa7901e24aa03c4688981fd22fa199fa" method="POST">
         <!--Honeypot-->
@@ -447,8 +447,41 @@
     }
     
     yazdir();
+
+
+
+
+
+
+    // Contact form temizleme operasyonu
+    function clearform() {
+      var form = document.getElementById('form-container');
+
+      var inputs = form.getElementsByTagName('input');
+
+
+      for (var i=0; i<inputs.length; i++) {
+        inputs[i].value = '';
+      }
+
+      var textarea = form.getElementsByTagName('textarea')[0];
+      textarea.value = '';
+
+    }
+
+
+    var submitButton = document.querySelector('#form-container button[type="submit"]');
+    submitButton.addEventListener('click', clearform);
+
+
+
+
+
+
+
     
   </script>
+
 
   
 
