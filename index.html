@@ -453,7 +453,7 @@
 
 
 
-    // Contact form temizleme operasyonu
+    // Contact form temizleme ve yeniden yükleme operasyonu
     function clearform() {
       var form = document.getElementById('form-container');
 
@@ -467,14 +467,13 @@
       var textarea = form.getElementsByTagName('textarea')[0];
       textarea.value = '';
 
-      location.reload();
+      form.submit();
 
     }
 
 
     var submitButton = document.querySelector('#form-container button[type="submit"]');
     submitButton.addEventListener('click', function (event) {
-      event.preventDefault();
       clearform();
     });
 
