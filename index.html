@@ -453,33 +453,7 @@
 
 
 
-    // Contact form temizleme ve yeniden yükleme operasyonu
-    function clearform() {
-      var form = document.getElementById('form-container');
-
-      var inputs = form.getElementsByTagName('input');
-
-
-      for (var i=0; i<inputs.length; i++) {
-        inputs[i].value = '';
-      }
-
-      var textarea = form.getElementsByTagName('textarea')[0];
-      textarea.value = '';
-
-      setTimeout(function () {
-       
-        window.location.href = "https://mulusoy-dev.github.io/my-portfolio/";
-      }, 2000);           // 200 milisaniye gecikme eklendi
-
-    }
-
-
-    var form = document.getElementById('form-container');
-    form.addEventListener('submit', function (event) {
-    event.preventDefault();                   // Formun otomatik olarak submit olmasını engelle
-    clearform();
-    });
+    
 
 
 
