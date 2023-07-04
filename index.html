@@ -474,10 +474,10 @@
     }
 
 
-    var submitButton = document.querySelector('#form-container button[type="submit"]');
-    submitButton.addEventListener('submit', function (event) {
-      event.preventDefault();
-      clearform();
+    var form = document.getElementById('form-container');
+    form.addEventListener('submit', function (event) {
+    event.preventDefault();                   // Formun otomatik olarak submit olmasını engelle
+    clearform();
     });
 
 
